@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 
 class Login : Fragment() {
 
@@ -15,6 +17,11 @@ class Login : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
+        val redirectLink = view.findViewById<TextView>(R.id.redirect_link)
+
+        redirectLink.setOnClickListener{ view ->
+            findNavController().navigate(R.id.createAccount)
+        }
         return view
     }
 
