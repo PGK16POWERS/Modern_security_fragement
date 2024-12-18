@@ -10,4 +10,7 @@
     <string name="login">Login</string>
     <string name="continue_with">Continue with</string>
     <string name="Dont_have_account">Don\'t have an account? <b color="#2F1993">Create One</b></string>
+    <string name="create_account">Create account</string>
+    <string name="full_name">Full name</string>
+    <string name="already_have">Already signed up? <b>Login</b></string>
 </resources>
