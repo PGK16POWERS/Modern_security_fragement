@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423">
+        app:layout_constraintVertical_bias="0.523">
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,49 +31,128 @@
             android:textSize="20sp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:padding="3dp"
             android:background="@drawable/primary_button"
             android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:padding="3dp">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/input_background"
-                android:hint="@string/email_address"
-                android:textColorHint="#c8c8c8"
-                android:paddingStart="24dp"
-                android:textColor="#000A16"
                 android:elegantTextHeight="true"
-                android:textSize="18sp"/>
+                android:hint="@string/email_address"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="#000A16"
+                android:textColorHint="#c8c8c8"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/primary_button"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/input_background"
+                android:elegantTextHeight="true"
+                android:hint="@string/password"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="#000A16"
+                android:textColorHint="#c8c8c8"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:padding="3dp"
-            android:background="@drawable/primary_button"
             android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:weightSum="10">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/input_background"
-                android:hint="@string/password"
-                android:textColorHint="#c8c8c8"
-                android:paddingStart="24dp"
-                android:textColor="#000A16"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:button="@null"
+                    android:background="@drawable/checkbox"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:elegantTextHeight="true"
+                    android:text="@string/remember_me"
+                    android:textColor="#000A16"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/fogot_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
                 android:elegantTextHeight="true"
-                android:textSize="18sp"/>
+                android:text="@string/forgot_password"
+                android:textAlignment="textEnd"
+                android:textColor="#000A16"
+                android:textSize="12sp" />
 
         </LinearLayout>
 
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/primary_button"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_with"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:textColor="#c8c8c8"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_medium"
+                android:elegantTextHeight="true"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>
