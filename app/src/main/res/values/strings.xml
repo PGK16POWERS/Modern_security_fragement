@@ -13,4 +13,8 @@
     <string name="create_account">Create account</string>
     <string name="full_name">Full name</string>
     <string name="already_have">Already signed up? <b>Login</b></string>
+    <string name="reset_password">Reset password</string>
+    <string name="an_email_with">An email with a reset link will be sent to the email address.</string>
+    <string name="send_code">Send code</string>
+    <string name="back_to_login"><b>Back to login</b></string>
 </resources>
