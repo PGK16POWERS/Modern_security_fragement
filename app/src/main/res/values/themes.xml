@@ -1,11 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ModernSecurity" parent="Theme.Design.NoActionBar">
+    <style name="Base.Theme.ModernSecurity" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:statusBarColor">@color/black</item>
         <item name="statusBarBackground">@color/black</item>
+        <item name="actionBarItemBackground">@color/black</item>
+        <item name="android:actionBarItemBackground">@color/black</item>
     </style>
 
     <style name="Theme.ModernSecurity" parent="Base.Theme.ModernSecurity" />
