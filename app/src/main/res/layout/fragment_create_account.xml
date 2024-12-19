@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/poppins_medium"
             android:text="@string/create_account"
             android:textAlignment="center"
             android:textColor="#161616"
@@ -61,6 +61,7 @@
                 android:paddingEnd="24dp"
                 android:textColor="#000A16"
                 android:textColorHint="#c8c8c8"
+                android:fontFamily="@font/poppins_light"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -69,7 +70,7 @@
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/primary_button"
             android:orientation="horizontal"
             android:padding="3dp">
@@ -84,6 +85,7 @@
                 android:paddingEnd="24dp"
                 android:textColor="#000A16"
                 android:textColorHint="#c8c8c8"
+                android:fontFamily="@font/poppins_light"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -107,6 +109,7 @@
                 android:paddingEnd="24dp"
                 android:textColor="#000A16"
                 android:textColorHint="#c8c8c8"
+                android:fontFamily="@font/poppins_light"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -217,17 +220,23 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/redirect_link"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/already_have"
-                android:textColor="#000A16"
-                android:textSize="12sp" />
-
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/redirect_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have"
+        android:textColor="#000A16"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

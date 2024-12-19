@@ -17,16 +17,17 @@ class Login : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
-        val redirectLink = view.findViewById<TextView>(R.id.redirect_link)
+        val redirectToCreateAcc = view.findViewById<TextView>(R.id.redirect_to_create_acc)
         val forgotPassword = view.findViewById<TextView>(R.id.forgot_password)
-
-        redirectLink.setOnClickListener{ view ->
-            findNavController().navigate(R.id.createAccount)
-        }
 
         forgotPassword.setOnClickListener { view ->
             findNavController().navigate(R.id.resetPassword)
         }
+
+        redirectToCreateAcc.setOnClickListener { view ->
+            findNavController().navigate(R.id.createAccount)
+        }
+
         return view
     }
 

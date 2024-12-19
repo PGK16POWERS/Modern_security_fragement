@@ -17,7 +17,7 @@ class CreateAccount : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_create_account, container, false)
 
-        val redirectLink = view.findViewById<TextView>(R.id.login)
+        val redirectLink = view.findViewById<TextView>(R.id.redirect_link)
 
         redirectLink.setOnClickListener { view ->
             findNavController().navigate(R.id.login)
