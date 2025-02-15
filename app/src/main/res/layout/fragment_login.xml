@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.074" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,6 +51,7 @@
             android:padding="3dp">
 
             <EditText
+                android:id="@+id/email_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/input_background"
@@ -75,6 +76,7 @@
             android:padding="3dp">
 
             <EditText
+                android:id="@+id/password_input"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/input_background"
@@ -137,6 +139,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/login_button"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
