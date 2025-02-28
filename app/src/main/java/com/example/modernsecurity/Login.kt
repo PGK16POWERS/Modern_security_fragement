@@ -28,14 +28,22 @@ class Login : Fragment() {
         passwordInputField = view.findViewById(R.id.password_input)
         loginButton = view.findViewById(R.id.login_button)
 
+        val inputedEmail = emailInputField.text.toString()
+        val inputedPassword = passwordInputField.text.toString()
+
+        val userObject = LoginModel(
+            email = inputedEmail,
+            password = inputedPassword
+            )
+
         val redirectToCreateAcc = view.findViewById<TextView>(R.id.redirect_to_create_acc)
         val forgotPassword = view.findViewById<TextView>(R.id.forgot_password)
 
-        forgotPassword.setOnClickListener { view ->
+        forgotPassword.setOnClickListener { _ ->
             findNavController().navigate(R.id.resetPassword)
         }
 
-        redirectToCreateAcc.setOnClickListener { view ->
+        redirectToCreateAcc.setOnClickListener { _ ->
             findNavController().navigate(R.id.createAccount)
         }
 
@@ -43,7 +51,7 @@ class Login : Fragment() {
     }
 
     private fun checkInputFields() {
-        if (emailInputField.text.length < 1) {
+        if (emailInputField.isDirty) {
             loginButton.setBackgroundResource(R.drawable.disabled_button)
         }
     }
